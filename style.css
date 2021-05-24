@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Nunito Sans", sans-serif;
+	z-index: 1;
+	background-color: hsl(207, 26%, 17%);
+	overflow-x: hidden;
+}
+.body {
+	z-index: -1;
+}
+img {
+	max-width: 100%;
+}
+.header {
+	padding: 30px 10px;
+	margin-bottom: 30px;
+	z-index: 1;
+}
+
+.header,
+.mode {
+	display: flex;
+	justify-content: space-between;
+}
+.mode {
+	cursor: pointer;
+}
+.mode p {
+	margin-top: 10px;
+	border: 1px solid hsl(209, 23%, 22%);
+}
+.select {
+	padding: 20px;
+}
+.input {
+	border: 1px solid hsl(209, 23%, 22%);
+	padding: 15px;
+	margin: 30px 10px;
+	width: 40%;
+}
+input[type="text"] {
+	border: none;
+	outline: none;
+	width: 95%;
+}
+input[type="text"]:focus,
+input[type="text"]:active {
+	border: none;
+	outline: none;
+}
+select {
+	/* -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none; */
+	outline: none;
+	box-shadow: none;
+	border: none;
+	padding: 20px;
+}
+.country-card {
+	margin: 20px;
+}
+.country-card img {
+	width: 100%;
+	margin-bottom: 20px;
+	height: 250px;
+}
+.country-card .country-detail {
+	padding: 30px;
+	line-height: 2rem;
+}
+.first {
+	margin-bottom: 40px;
+	background-color: hsl(209, 23%, 22%);
+	color: white;
+}
+.check {
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(209, 23%, 22%);
+}
+.border {
+	border: 1px solid white;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+		rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+@media (min-width: 920px) {
+	.country-card {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 40px;
+	}
+	.detail .buttons {
+		margin-top: 30px;
+		margin-bottom: 40px;
+		padding: 5px 15px;
+		border: 1px solid hsl(209, 23%, 22%);
+		background-color: hsl(209, 23%, 22%);
+	}
+	.detail .buttons a {
+		display: flex;
+		justify-content: space-between;
+		color: white;
+		box-shadow: none;
+		background-color: hsl(209, 23%, 22%);
+		text-decoration: none;
+		font-size: 20px;
+	}
+	.detail .buttons a i {
+		margin-right: 10px;
+	}
+	.container {
+		display: flex;
+		justify-content: space-around;
+		padding: 0px;
+	}
+	.primary {
+		display: flex;
+		justify-content: space-between;
+	}
+	.secondary-details {
+		margin-left: 40px;
+		margin-top: 2px;
+	}
+	.detail-flex h2 {
+		margin-bottom: 30px;
+		margin-top: 2px;
+	}
+	.country-flag {
+		width: 500px;
+		height: 350px;
+	}
+	.form {
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+	}
+	.input {
+		margin-top: -3px;
+	}
+}
+option[value=""][disabled] {
+	display: none;
+}
+@media screen and (max-width: 720px) {
+	input[type="text"] {
+		width: 90%;
+	}
+	select {
+		width: 40%;
+	}
+	.input {
+		width: 70%;
+	}
+}
+select {
+	margin-left: 20px;
+}
+.detail {
+	display: none;
+}
+.container {
+	color: white;
+	padding: 30px;
+}
+.detail h2 {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.primary {
+	line-height: 2rem;
+}
+.secondary-details {
+	margin-top: 20px;
+}
+
+.borders {
+	margin-top: 15px;
+}
+.borders .border-country {
+	border: 1px solid hsl(209, 23%, 22%);
+	padding: 5px 10px;
+	margin-left: 10px;
+}
+.detail .buttons {
+	margin-top: 30px;
+	margin-bottom: 40px;
+	margin-left: 30px;
+	padding: 5px 15px;
+	border: 1px solid hsl(209, 23%, 22%);
+	width: 20%;
+	background-color: hsl(209, 23%, 22%);
+}
+.detail .buttons a {
+	color: white;
+	text-decoration: none;
+}
+.show {
+	display: block;
+}
+.hide {
+	display: none;
+}

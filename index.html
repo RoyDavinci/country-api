@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Country API</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="header check">
+			<h2>Where in the world</h2>
+			<div class="mode">
+				<img src="images/icon-moon.svg" class="svg" alt="" />
+				<p class="change">Dark Mode</p>
+			</div>
+		</div>
+		<div class="body">
+			<div class="form">
+				<div class="input check">
+					<i class="fa fa-search search" aria-hidden="true"></i>
+					<input
+						type="text"
+						placeholder="Search for country...."
+						class="input-text check"
+					/>
+				</div>
+				<form action="">
+					<select name="cars" id="region" class="check">
+						<option value="" disabled selected>Filter by Region</option>
+						<option value="Africa">Africa</option>
+						<option value="Asia">Asia</option>
+						<option value="Americas">Americas</option>
+						<option value="Oceania">Oceania</option>
+						<option value="Europe">Europe</option>
+					</select>
+				</form>
+			</div>
+			<div class="country-card"></div>
+		</div>
+		<div class="detail"></div>
+		<script src="app.js"></script>
+		<script src="https://use.fontawesome.com/a951cc9ded.js"></script>
+	</body>
+</html>
